@@ -18,7 +18,7 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'tab2',
+        path: 'People',
         children: [
           {
             path: '',
@@ -28,7 +28,27 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'tab3',
+        path: 'Conference',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+          }
+        ]
+      },
+      {
+        path: 'Building',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+          }
+        ]
+      },
+      {
+        path: 'More',
         children: [
           {
             path: '',
