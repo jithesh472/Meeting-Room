@@ -4,56 +4,339 @@
       <p>Quick Find : Near By <span style="color: orange;">Resourses</span> at <span style="color:orange">Cessna
           Campus</span> </p>
       <div style=" overflow-x: auto;white-space: nowrap;">
-        <circle-progress [percent]="85" [radius]="30" [outerStrokeWidth]="4" [innerStrokeWidth]="8"
+        <!-- <span style="height: 100px; width: 100px; background-color: #bbb; border-radius: 50%; display: flex; border: orange 3px solid;">Complete</span>
+        <span style="height: 100px; width: 100px; background-color: #bbb; border-radius: 50%; display: flex; border: orange 3px solid;">Complete</span> -->
+        <circle-progress [percent]="100" [radius]="30" [outerStrokeWidth]="4" [innerStrokeWidth]="8"
           [outerStrokeColor]="'orange'" [innerStrokeColor]="''" [animation]="true" [animationDuration]="300">
         </circle-progress>
-        <circle-progress [percent]="65" [radius]="30" [outerStrokeWidth]="4" [innerStrokeWidth]="8"
+        <circle-progress [percent]="100" [radius]="30" [outerStrokeWidth]="4" [innerStrokeWidth]="8"
           [outerStrokeColor]="'orange'" [innerStrokeColor]="''" [animation]="true" [animationDuration]="300">
         </circle-progress>
-        <circle-progress [percent]="35" [radius]="30" [outerStrokeWidth]="4" [innerStrokeWidth]="8"
+        <circle-progress [percent]="100" [radius]="30" [outerStrokeWidth]="4" [innerStrokeWidth]="8"
           [outerStrokeColor]="'orange'" [innerStrokeColor]="''" [animation]="true" [animationDuration]="300">
         </circle-progress>
-        <circle-progress [percent]="25" [radius]="30" [outerStrokeWidth]="4" [innerStrokeWidth]="8"
+        <circle-progress [percent]="100" [radius]="30" [outerStrokeWidth]="4" [innerStrokeWidth]="8"
           [outerStrokeColor]="'orange'" [innerStrokeColor]="''" [animation]="true" [animationDuration]="300">
         </circle-progress>
-        <circle-progress [percent]="55" [radius]="30" [outerStrokeWidth]="4" [innerStrokeWidth]="8"
+        <circle-progress [percent]="100" [radius]="30" [outerStrokeWidth]="4" [innerStrokeWidth]="8"
           [outerStrokeColor]="'orange'" [innerStrokeColor]="''" [animation]="true" [animationDuration]="300">
         </circle-progress>
-        <circle-progress [percent]="65" [radius]="30" [outerStrokeWidth]="4" [innerStrokeWidth]="8"
+        <circle-progress [percent]="100" [radius]="30" [outerStrokeWidth]="4" [innerStrokeWidth]="8"
           [outerStrokeColor]="'orange'" [innerStrokeColor]="''" [animation]="true" [animationDuration]="300">
         </circle-progress>
-        <circle-progress [percent]="75" [radius]="30" [outerStrokeWidth]="4" [innerStrokeWidth]="8"
+        <circle-progress [percent]="100" [radius]="30" [outerStrokeWidth]="4" [innerStrokeWidth]="8"
           [outerStrokeColor]="'orange'" [innerStrokeColor]="''" [animation]="true" [animationDuration]="300">
         </circle-progress>
-        <circle-progress [percent]="75" [radius]="30" [outerStrokeWidth]="4" [innerStrokeWidth]="8"
+        <circle-progress [percent]="100" [radius]="30" [outerStrokeWidth]="4" [innerStrokeWidth]="8"
           [outerStrokeColor]="'orange'" [innerStrokeColor]="''" [animation]="true" [animationDuration]="300">
         </circle-progress>
       </div>
-      <ion-header style="background-color:#E6E6E6; padding:10px">
+      <ion-header style="background-color:#E6E6E6;">
         <ion-title>My Meetings</ion-title>
       </ion-header>
-      <div style="background-color: #CEE3F6; text-align: center;">
-        All day event Name
-      </div>
-      <ion-row style="border-bottom: rgb(170, 167, 167) solid 1px; padding: 5px;">
+      <ion-row style="background-color: #CEE3F6; text-align: center;">
+        <ion-col size="3"><span style="height: 10px; width: 10px; background-color: rgb(10, 198, 245); border-radius: 50%; display: inline-block;"></span>All day</ion-col>
+        <ion-col size="3">
+          Event Name
+        </ion-col>
+      </ion-row>
+      <ion-row style="border-bottom: rgb(170, 167, 167) solid 1px;" routerLink="/tabs/People">
         <ion-col size="2">
-            <circle-progress [percent]="25" [radius]="30" [outerStrokeWidth]="4" [innerStrokeWidth]="2"
+          <circle-progress [percent]="25" [radius]="35" [outerStrokeWidth]="4" [innerStrokeWidth]="2"
             [outerStrokeColor]="'green'" [innerStrokeColor]="'green'" [animation]="true" [animationDuration]="300">
           </circle-progress>
         </ion-col>
-        <ion-col size="3" style="border-right: rgb(5, 143, 16) 3px solid;  padding: 10px;">
-            <p style="font-weight: bold;">10:00 AM </p>
-            <p style="font-weight: bold;">12:00 AM </p>
+        <ion-col size="2" style="border-right: rgb(5, 143, 16) 5px solid; margin: 20px 0px 20px 0px;">
+          <p style="font-weight: bold;">10:00 AM </p>
+          <p style="font-weight: bold;">12:00 AM </p>
         </ion-col>
-        <ion-col size="3">
-            <ion-thumbnail slot="start" style="position: absolute;  padding: 10px;"> 
-                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-              </ion-thumbnail>
+        <ion-col size="4">
+          <ion-row>
+            <ion-col>
+              <p style="font-size: 12px;">Project Meeting Name 1</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col size="4">
+                  <img src="/assets/maxresdefault.png"
+                    style="border-radius: 50%;height: 50px;width: 50px;">
+                </ion-col>
+            <ion-col>
+              <p style="font-size: 12px; font-weight: bold;">testtestest test</p>
+              <p style="font-size: 12px;">test</p>
+            </ion-col>
+          </ion-row>
         </ion-col>
-        <ion-col size="2">test4</ion-col>
-        <ion-col size="2">test5</ion-col>
       </ion-row>
-      
+
+      <ion-row style="border-bottom: rgb(170, 167, 167) solid 1px;">
+        <ion-col size="2">
+          <circle-progress [percent]="85" [radius]="35" [outerStrokeWidth]="4" [innerStrokeWidth]="2"
+            [outerStrokeColor]="'green'" [innerStrokeColor]="'green'" [animation]="true" [animationDuration]="300">
+          </circle-progress>
+        </ion-col>
+        <ion-col size="2" style="border-right: rgb(5, 143, 16) 5px solid; margin: 20px 0px 20px 0px;">
+          <p style="font-weight: bold;">10:00 AM </p>
+          <p style="font-weight: bold;">12:00 AM </p>
+        </ion-col>
+        <ion-col size="4">
+          <ion-row>
+            <ion-col>
+              <p style="font-size: 12px;">Project Meeting Name 1</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="4">
+              <img src="/assets/maxresdefault.png"
+                style="border-radius: 50%;height: 50px;width: 50px;">
+            </ion-col>
+            <ion-col>
+              <p style="font-size: 12px; font-weight: bold;">testtestest test</p>
+              <p style="font-size: 12px;">test</p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+      <ion-row style="border-bottom: rgb(170, 167, 167) solid 1px;">
+        <ion-col size="2">
+          <circle-progress [percent]="55" [radius]="35" [outerStrokeWidth]="4" [innerStrokeWidth]="2"
+            [outerStrokeColor]="'orange'" [innerStrokeColor]="'green'" [animation]="true" [animationDuration]="300">
+          </circle-progress>
+        </ion-col>
+        <ion-col size="2" style="border-right: rgb(224, 114, 11) 5px solid; margin: 20px 0px 20px 0px;">
+          <p style="font-weight: bold;">10:00 AM </p>
+          <p style="font-weight: bold;">12:00 AM </p>
+        </ion-col>
+        <ion-col size="4">
+          <ion-row>
+            <ion-col>
+              <p style="font-size: 12px;">Project Meeting Name 2</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col size="4">
+                  <img src="/assets/maxresdefault.png"
+                    style="border-radius: 50%;height: 50px;width: 50px;">
+                </ion-col>
+            <ion-col>
+              <p style="font-size: 12px; font-weight: bold;">testtestest test</p>
+              <p style="font-size: 12px;">test</p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+      <ion-row style="border-bottom: rgb(170, 167, 167) solid 1px;">
+        <ion-col size="2">
+          <circle-progress [percent]="25" [radius]="35" [outerStrokeWidth]="4" [innerStrokeWidth]="2"
+            [outerStrokeColor]="'rgb(150, 145, 142) '" [innerStrokeColor]="'green'" [animation]="true"
+            [animationDuration]="300">
+          </circle-progress>
+        </ion-col>
+        <ion-col size="2" style="border-right: rgb(150, 145, 142) 5px solid; margin: 20px 0px 20px 0px;">
+          <p style="font-weight: bold;">10:00 AM </p>
+          <p style="font-weight: bold;">12:00 AM </p>
+        </ion-col>
+        <ion-col size="4">
+          <ion-row>
+            <ion-col>
+              <p style="font-size: 12px;">Project Meeting Name 3</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="3">
+              <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+                style="border-radius: 50%;height: 30px;width: 30px;">
+            </ion-col>
+            <ion-col>
+              <p style="font-size: 12px; font-weight: bold;">testtestest test</p>
+              <p style="font-size: 12px;">test</p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+      <ion-row style="border-bottom: rgb(170, 167, 167) solid 1px;">
+        <ion-col size="2">
+          <circle-progress [percent]="25" [radius]="35" [outerStrokeWidth]="4" [innerStrokeWidth]="2"
+            [outerStrokeColor]="'rgb(150, 145, 142) '" [innerStrokeColor]="'green'" [animation]="true"
+            [animationDuration]="300">
+          </circle-progress>
+        </ion-col>
+        <ion-col size="2" style="border-right: rgb(150, 145, 142) ; margin: 20px 0px 20px 0px;">
+          <p style="font-weight: bold;">10:00 AM </p>
+          <p style="font-weight: bold;">12:00 AM </p>
+        </ion-col>
+        <ion-col size="4">
+          <ion-row>
+            <ion-col>
+              <p style="font-size: 12px;">Project Meeting Name 1</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col size="4">
+                  <img src="/assets/maxresdefault.png"
+                    style="border-radius: 50%;height: 50px;width: 50px;">
+                </ion-col>
+            <ion-col>
+              <p style="font-size: 12px; font-weight: bold;">testtestest test</p>
+              <p style="font-size: 12px;">test</p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+      <ion-row style="border-bottom: rgb(170, 167, 167) solid 1px;">
+        <ion-col size="2">
+          <circle-progress [percent]="100" [radius]="35" [outerStrokeWidth]="4" [innerStrokeWidth]="2"
+            [outerStrokeColor]="'rgb(150, 145, 142) '" [innerStrokeColor]="'green'" [animation]="true"
+            [animationDuration]="300">
+          </circle-progress>
+        </ion-col>
+        <ion-col size="2" style="border-right: rgb(150, 145, 142)  5px solid; margin: 20px 0px 20px 0px;">
+          <p style="font-weight: bold;">10:00 AM </p>
+          <p style="font-weight: bold;">12:00 AM </p>
+        </ion-col>
+        <ion-col size="4">
+          <ion-row>
+            <ion-col>
+              <p style="font-size: 12px;">Project Meeting Name 1</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="3">
+              <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+                style="border-radius: 50%;height: 30px;width: 30px;">
+            </ion-col>
+            <ion-col>
+              <p style="font-size: 12px; font-weight: bold;">testtestest test</p>
+              <p style="font-size: 12px;">test</p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+      <ion-row style="border-bottom: rgb(170, 167, 167) solid 1px;">
+        <ion-col size="2">
+          <circle-progress [percent]="90" [radius]="35" [outerStrokeWidth]="4" [innerStrokeWidth]="2"
+            [outerStrokeColor]="'rgb(150, 145, 142) '" [innerStrokeColor]="'green'" [animation]="true"
+            [animationDuration]="300">
+          </circle-progress>
+        </ion-col>
+        <ion-col size="2" style="border-right: rgb(150, 145, 142)  5px solid; margin: 20px 0px 20px 0px;">
+          <p style="font-weight: bold;">10:00 AM </p>
+          <p style="font-weight: bold;">12:00 AM </p>
+        </ion-col>
+        <ion-col size="4">
+          <ion-row>
+            <ion-col>
+              <p style="font-size: 12px;">Project Meeting Name 1</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col size="4">
+                  <img src="/assets/maxresdefault.png"
+                    style="border-radius: 50%;height: 50px;width: 50px;">
+                </ion-col>
+            <ion-col>
+              <p style="font-size: 12px; font-weight: bold;">testtestest test</p>
+              <p style="font-size: 12px;">test</p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+      <ion-row style="border-bottom: rgb(170, 167, 167) solid 1px;">
+        <ion-col size="2">
+          <circle-progress [percent]="25" [radius]="35" [outerStrokeWidth]="4" [innerStrokeWidth]="2"
+            [outerStrokeColor]="'rgb(150, 145, 142) '" [innerStrokeColor]="'green'" [animation]="true"
+            [animationDuration]="300">
+          </circle-progress>
+        </ion-col>
+        <ion-col size="2" style="border-right: rgb(150, 145, 142)  5px solid; margin: 20px 0px 20px 0px;">
+          <p style="font-weight: bold;">10:00 AM </p>
+          <p style="font-weight: bold;">12:00 AM </p>
+        </ion-col>
+        <ion-col size="4">
+          <ion-row>
+            <ion-col>
+              <p style="font-size: 12px;">Project Meeting Name 1</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col size="4">
+                  <img src="/assets/maxresdefault.png"
+                    style="border-radius: 50%;height: 50px;width: 50px;">
+                </ion-col>
+            <ion-col>
+              <p style="font-size: 12px; font-weight: bold;">testtestest test</p>
+              <p style="font-size: 12px;">test</p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+      <ion-row style="border-bottom: rgb(170, 167, 167) solid 1px;">
+        <ion-col size="2">
+          <circle-progress [percent]="65" [radius]="35" [outerStrokeWidth]="4" [innerStrokeWidth]="2"
+            [outerStrokeColor]="'rgb(150, 145, 142) '" [innerStrokeColor]="'green'" [animation]="true"
+            [animationDuration]="300">
+          </circle-progress>
+        </ion-col>
+        <ion-col size="2" style="border-right: rgb(150, 145, 142)  5px solid; margin: 20px 0px 20px 0px;">
+          <p style="font-weight: bold;">10:00 AM </p>
+          <p style="font-weight: bold;">12:00 AM </p>
+        </ion-col>
+        <ion-col size="4">
+          <ion-row>
+            <ion-col>
+              <p style="font-size: 12px;">Project Meeting Name 1</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col size="4">
+                  <img src="/assets/maxresdefault.png"
+                    style="border-radius: 50%;height: 50px;width: 50px;">
+                </ion-col>
+            <ion-col>
+              <p style="font-size: 12px; font-weight: bold;">testtestest test</p>
+              <p style="font-size: 12px;">test</p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+      <ion-row style="border-bottom: rgb(170, 167, 167) solid 1px;">
+        <ion-col size="2">
+          <circle-progress [percent]="35" [radius]="35" [outerStrokeWidth]="4" [innerStrokeWidth]="2"
+            [outerStrokeColor]="'rgb(150, 145, 142) '" [innerStrokeColor]="'green'" [animation]="true"
+            [animationDuration]="300">
+          </circle-progress>
+        </ion-col>
+        <ion-col size="2" style="border-right: rgb(150, 145, 142)  5px solid; margin: 20px 0px 20px 0px;">
+          <p style="font-weight: bold;">10:00 AM </p>
+          <p style="font-weight: bold;">12:00 AM </p>
+        </ion-col>
+        <ion-col size="4">
+          <ion-row>
+            <ion-col>
+              <p style="font-size: 12px;">Project Meeting Name 1</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col size="4">
+                  <img src="/assets/maxresdefault.png"
+                    style="border-radius: 50%;height: 50px;width: 50px;">
+                </ion-col>
+            <ion-col>
+              <p style="font-size: 12px; font-weight: bold;">testtestest test</p>
+              <p style="font-size: 12px;">test</p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
     </ion-card-content>
   </ion-card>
 </ion-content>
