@@ -5,12 +5,14 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Tab1Page } from './tab1.page';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { NgCalendarModule  } from 'ionic2-calendar';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
+    NgCalendarModule,
     RouterModule.forChild([{ path: '', component: Tab1Page }]),
     NgCircleProgressModule.forRoot({
       // set defaults here

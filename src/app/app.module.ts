@@ -12,6 +12,9 @@ import { AppComponent } from './app.component';
 // Import ng-circle-progress
 import { NgCircleProgressModule } from 'ng-circle-progress';
 
+import { NgCalendarModule  } from 'ionic2-calendar';
+
+import { Tab1Page } from '../app/tab1/tab1.page';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,6 +23,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,
+    NgCalendarModule,
     NgCircleProgressModule.forRoot({
       // set defaults here
       radius: 100,

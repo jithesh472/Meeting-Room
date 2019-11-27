@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
-
+ divChangeVal =  true;
   constructor() {}
-
+    divChange(){
+      this.divChangeVal = this.divChangeVal ? false : true;
+    }
 }

@@ -1,5 +1,7 @@
 {
   "name": "meetingRoom",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
